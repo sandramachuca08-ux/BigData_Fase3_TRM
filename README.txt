@@ -1,36 +1,45 @@
-PROYECTO BIG DATA - TAREA 3 
-Procesamiento de datos con Apache Spark y Kafka
+Proyecto Big Data Fase 3 – Análisis de la TRM en Colombia
 
-DESCRIPCION:
-El proyecto utiliza informaciòn històrica de la Tasa Representativa del Mercado (TRM) de Colombia para realizar procesamiento por lotes y procesamiento en tiempo real.
+Descripción del proyecto
 
-HERRAMIENTAS UTILIZADAS:
--Ubuntu 22.04.5
--Python 3
--Apache Spark 3.5.6
--Apache Kafka 3.9.2
--PySpark
--Kafka-Python
+Este proyecto tiene como finalidad aplicar herramientas y tecnologías Big Data para el procesamiento y análisis de información relacionada con la Tasa Representativa del Mercado (TRM) en Colombia.
 
-ARCHIVOS:
--rows.csv: conjunto de datos historico de la TRM.
--procesamiento_batch.py: procesamiento por lotes.
--resultados_batch.txt: resultados del procesamiento por lotes.
--productor_trm.py: envìo de datos simulados a kafka.
--consumidor_trm.py: recepciòn y procesamiento de datos con Spark Streaming.
+Se implementaron procesos de procesamiento por lotes (Batch) y procesamiento de datos en tiempo real (Streaming), utilizando Python, Apache Spark y Apache Kafka.
 
-EJECUCIÒN DEL PROCESAMIENTO POR LOTES:
-1. Abrir la terminal-
-2. Ingresar a la carpeta del proyecto: 
-   cd /home/vboxuser/BigData_Fase3
-3. Ejecutar
-   python3 procesamiento_batch.py
+Objetivo
 
-EJECUCIÒN EN TIEMPO REAL:
-1. Iniciar zookeeper.
-2. Iniciar el servidor kafka.
-3. Ejecutar el productor de datos TRM.
-4. Ejecutar el consumidor mediante Spark Streaming.
+Desarrollar una solución Big Data que permita procesar información histórica y simular la transmisión y recepción continua de datos de la TRM.
 
-CONCLUSIÒN:
-El proyecto permite anàlizar datos històricos de la TRM mediante Apache Sparky de mostrar el flujo de datos en tiempo real utilizando Apache kafka y Spark Streaming.
+Herramientas utilizadas
+
+- Python.
+- Apache Spark.
+- PySpark.
+- Apache Kafka.
+- Spark Structured Streaming.
+- Ubuntu Linux.
+- GitHub.
+
+Archivos del proyecto
+
+- `procesamiento_batch.py`: procesamiento de datos históricos mediante Spark.
+- `productor_trm.py`: generación y envío de datos simulados a Kafka.
+- `consumidor_trm.py`: recepción y procesamiento de datos mediante Spark Streaming.
+- `rows.csv`: archivo de datos utilizado para el procesamiento.
+- `resultados_batch.txt`: archivo con resultados del procesamiento.
+
+Funcionamiento
+
+El proyecto integra tres etapas:
+
+1. Procesamiento histórico de datos mediante Batch.
+2. Generación y transmisión de registros de la TRM mediante Kafka.
+3. Recepción y visualización de datos en tiempo real mediante Spark Streaming.
+
+Autor
+
+Sandra Margarita Rodriguez Machuca
+
+Repositorio
+
+https://github.com/sandramachuca08-ux/BigData_Fase3_TRM
